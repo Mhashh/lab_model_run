@@ -8,6 +8,7 @@
 # In[1]:
 
 
+
 # In[2]:
 
 
@@ -140,7 +141,7 @@ for name, urlconfig in models_info.items():
     dec = dec_fn(config=config, inp_sizes=enc.out_sizes)
     segm = Segmenter(enc, dec).to(device).eval()
     modelpath = os.path.join(".","models",name)
-    segm.load_state_dict(load_url((name, url), map_location=device), strict=False)
+    segm.load_state_dict(torch.load(modelpath, map_location=device), strict=False)
     models[arch] = segm
     del enc
 
