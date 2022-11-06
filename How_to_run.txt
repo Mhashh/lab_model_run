@@ -1,0 +1,24 @@
+By 205121054
+[Using your own system]
+-Open terminal.
+-Go to ~/205121054_Lab_project directory.
+-install these dependencies using pip or any python package manager.
+--pip3
+--Cython
+--cv2
+--jupyter-notebook(optional)
+--matplotlib
+--PyQt5
+--numpy
+--Pillow
+--torch>=1.0
+--torchvision
+-Run command "python segmentation_on_pascal_voc_dataset.py".
+-Wait for few minutes for output to show
+
+[jupyter notebook]
+-Open terminal.
+-Go to ~/205121054_Lab_project directory.
+-Run command "jupyter notebook".
+-In jupyter open "segmentation_on_pascal_voc_dataset.ipynb" and run the notebook.
+-Wait for few minutes for output to show
